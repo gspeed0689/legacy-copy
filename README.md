@@ -19,7 +19,7 @@ At first, the floppy process was replicated, however there were many more errors
 
 This was unsatisfactory and took a long time with unclear results. Next I wrote a Python script, `cdxu.py` to copy the contents from the CD to a folder. 
 
-Finally, brought together, I have bash scripts for Ubuntu to run `cdxu.py` and then DDRescue. This process still takes several hours per disk. A second DVD drive was found and the bash script was copied and configured such that `/dev/sr0` or `/dev/sr1` are specified as sources for DDRescue, and `cdxu.py` will look in `/etc/mtab` to find the `/media` mounts for each disk and keep `/dev/sr0` DDRescue with `/media/{sr0}` copy content. 
+Finally, brought together, I have bash scripts for Ubuntu to run `cdxu.py` and then DDRescue. This process still takes several hours per disk. A second DVD drive was found and the bash script was copied and configured such that `/dev/sr0` or `/dev/sr1` are specified as sources for DDRescue, and `cdxu.py` will look in `/etc/mtab` to find the `/media` mounts for each disk and keep `/dev/sr0` DDRescue with `/media/{sr0}` copy content. `/dev/cdrom` was not used as only one is listed even when two disks are available. 
 
 To help with disk documentation, a similar photo workflow was created for CDs. Take photos of the disks with a webcam, then copy the photos with a new name into the disk folder. 
 
